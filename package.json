@@ -1,25 +1,26 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  },
   "name": "serasa-mock",
-  "description": "Serasa mock for simple tests",
   "version": "1.0.0",
-  "main": "app.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Serasa mock for simple tests",
+  "engines": {
+    "node": "12.x"
   },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucashelt/serasa-mock.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lucashelt/serasa-mock/issues"
   },
   "homepage": "https://github.com/lucashelt/serasa-mock#readme"
 }
