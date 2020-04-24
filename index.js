@@ -112,6 +112,7 @@ express()
       })
 
       if(Math.floor(Math.random() * 10) > 5) {
+         RiskScore += 130
          serasaData['AlertaDocumentos'] = {
             "TotalOcorrencias":1,
             "Ocorrências": [{
@@ -128,7 +129,8 @@ express()
          }
       }
 
-      serasaData["Mensagem"] = "CONSULTA REALIZADA COM SUCESSO"
+         serasaData["RiskScore"] = RiskScore
+         serasaData["Mensagem"] = "CONSULTA REALIZADA COM SUCESSO"
          serasaData["Status"] = true
          serasaData["Transacao"] = {
             "Status":true,
